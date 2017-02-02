@@ -52,4 +52,51 @@ describe('Maths', function() {
       expect(actual).to.equal(expected);
     });
   });
+
+  describe('fib', function() {
+    let testsData = [
+      {
+        name: 'Standard',
+        givenValue: 10,
+        expected: [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+      }
+    ];
+    _.each(testsData, function (testData) {
+      it(testData.name + ': fib('+testData.givenValue+')  should return ['+testData.expected+']', function() {
+        // Given
+
+        // When
+        var actual = Maths.fib(testData.givenValue);
+
+        // Then
+        expect(actual).to.deep.equal(testData.expected);
+      });
+    });
+  });
+
+  describe('fibEven', function() {
+    let testsData = [
+      {
+        name: 'Standard',
+        givenMax: 36,
+        expected: [2, 8, 34]
+      },
+      {
+        name: 'Standard',
+        givenMax: 30,
+        expected: [2, 8]
+      }
+    ];
+    _.each(testsData, function (testData) {
+      it(testData.name + ': fibEven('+ testData.givenMax+')  should return ['+testData.expected+']', function() {
+        // Given
+
+        // When
+        var actual = Maths.fibEven(testData.givenMax);
+
+        // Then
+        expect(actual).to.deep.equal(testData.expected);
+      });
+    });
+  });
 });

@@ -19,4 +19,18 @@ describe('Problems', function() {
 
     expect(actual).to.equal(expected);
   });
+
+  describe('problem2', function() {
+    // Given
+
+    // When
+    console.time('problem2');
+    var actual = Problems.problem2();
+    console.timeEnd('problem2');
+
+    // Then
+    var expected = 4613732;
+
+    expect(actual).to.equal(expected);
+  });
 });
