@@ -1,0 +1,21 @@
+{
+  "name": "euler-problems",
+  "version": "0.0.1",
+  "description": "Euler Problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": "https://github.com/Anthony-Mckale/euler-problems.git",
+  "author": "Anthony McKale <anthony@zapper.hodgers.com>",
+  "license": "MIT",
+  "contributors": [
+    "Anthony McKale <anthony@zapper.hodgers.com>"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "chai": "^3.5.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0"
+  }
+}
