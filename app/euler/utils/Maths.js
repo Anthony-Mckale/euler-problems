@@ -14,7 +14,11 @@ module.exports = (function () {
      * @return {number}
      */
     sum: function (values) {
-      return 0;
+      var summedValue = 0;
+      for(var index in values) {
+        summedValue += values[index];
+      }
+      return summedValue;
     }
   };
 })();
